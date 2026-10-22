@@ -1,0 +1,13 @@
+title: Ito ポートフォリオ
+description: 愛知工業大学大学院 経営情報科学研究科に在籍するItoのポートフォリオ
+url: https://ito-hub0701.github.io
+baseurl: ""
+timezone: Asia/Tokyo
+markdown: kramdown
+permalink: /diary/:year/:month/:day/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

@@ -1,0 +1,20 @@
+---
+layout: default
+title: 日記
+description: Itoの日々の学びや制作の記録です。
+---
+<section class="blog-page" id="top">
+  <p class="eyebrow">JOURNAL / NOTES</p>
+  <h1>日々の記録<span>。</span></h1>
+  <p class="blog-intro">学んだこと、作ったもの、気づいたことを少しずつ記録します。</p>
+  {% if site.posts.size > 0 %}
+  <div class="diary-list blog-list">
+    {% for post in site.posts %}
+    <a class="diary-card" href="{{ post.url | relative_url }}"><time>{{ post.date | date: "%Y.%m.%d" }}</time><span class="diary-title">{{ post.title }}</span><span class="diary-arrow">↗</span></a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="diary-empty">記事はまだありません。</p>
+  {% endif %}
+  <a class="text-back" href="{{ '/' | relative_url }}">← トップページへ戻る</a>
+</section>
