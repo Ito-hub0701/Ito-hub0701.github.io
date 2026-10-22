@@ -7,7 +7,7 @@
 - `index.html` — トップページ。最新の日記を3件表示します。
 - `index.css` — サイト全体のデザイン
 - `face.png` — プロフィールアイコン（70 × 70 px）
-- `blog.html` — 日記一覧ページ
+- `blog.html` — 日記一覧ページ（公開URLは`/blog/`）
 - `_config.yml` — Jekyllの設定
 - `_layouts/` — 日記一覧と記事ページのレイアウト
 - `_posts/` — 日記記事を保存するフォルダー
@@ -37,6 +37,6 @@ date: 2026-10-23 20:00:00 +0900
 
 1. `index.html`、`index.css`、`face.png`、`blog.html`、`_config.yml`、`_layouts`、`_posts`をリポジトリのトップ階層にアップロードします。
 2. リポジトリの **Settings → Pages** で、公開元を`main`ブランチの`/(root)`に設定します。ブランチから公開する設定ではGitHub PagesがJekyllを使ってサイトをビルドします。
-3. 数分後、[https://ito-hub0701.github.io/](https://ito-hub0701.github.io/)を開きます。
+3. 数分後、[トップページ](https://ito-hub0701.github.io/)と[日記一覧](https://ito-hub0701.github.io/blog/)を開きます。
 
 Jekyllでは、日付とタイトルを付けたMarkdownファイルを`_posts`に追加して投稿を作れます。詳しくは[GitHub公式ドキュメント](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll)を参照してください。

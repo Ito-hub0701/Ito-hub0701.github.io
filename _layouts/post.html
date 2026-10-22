@@ -5,5 +5,5 @@ layout: default
   <p class="eyebrow">DIARY / {{ page.date | date: "%Y.%m.%d" }}</p>
   <h1>{{ page.title }}</h1>
   <div class="post-content">{{ content }}</div>
-  <a class="button post-back" href="{{ '/blog.html' | relative_url }}">日記一覧へ <span>←</span></a>
+  <a class="button post-back" href="{{ '/blog/' | relative_url }}">日記一覧へ <span>←</span></a>
 </article>
